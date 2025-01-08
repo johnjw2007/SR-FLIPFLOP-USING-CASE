@@ -47,7 +47,7 @@ The maximum possible groupings of adjacent ones are already shown in the figure.
 Developed by: John Wilfred Thomas J W
 Register number: 24013517
 */
-
+~~~
 module exp_6(S,R,clk,Q,Qbar); 
 input S,R,clk;
 output reg Q;
@@ -57,7 +57,7 @@ initial Qbar=1;
 always @(posedge clk) begin Q=S|((~R)&Q);
 Qbar=~Q;
 end endmodule
-
+~~~
 
 **RTL LOGIC FOR FLIPFLOPS**
 ![image](https://github.com/user-attachments/assets/4d99b891-f179-4255-afe7-ac3545066680)
